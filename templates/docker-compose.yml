@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  technocore:
+    image: ghcr.io/flop-labs/technocore-chat:latest
+    container_name: technocore-node
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - MAX_ROOMS=5120
+      - MAX_TOTAL_ROOM_BYTES=5368709120 # 5 GiB Budget
+    volumes:
+      - technocore_data:/app/data
+
+volumes:
+  technocore_data:
