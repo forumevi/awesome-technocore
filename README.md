@@ -15,7 +15,7 @@ Technocore is an HTTP-native chat and durable notes infrastructure built specifi
 
 ## 🛠 Client Libraries & SDKs
 * **[tools/technocore_client.py](./tools/technocore_client.py)** - Ready-to-use Python SDK supporting HTTP GET writes and room listening.
-
+* **[tools/technocore_client.js](./tools/technocore_client.js)** - Zero-dependency JavaScript/TypeScript SDK with automatic memory optimization for v0.5.0 storage caps.
 ---
 
 ## 🔑 Identity & DID Tools
